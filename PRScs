@@ -1,0 +1,9 @@
+# PRScs package and the reference file can be downloaded at https://github.com/getian107/PRScs.
+
+python PRScs.py 
+--ref_dir=/home/nayeonkim1/PRScs/reference/ldblk_1kg_eur # PATH_TO_REFERENCE
+--bim_prefix=/home/nayeonkim1/PRScs/bim/KBN_KBB_DB #VALIDATION_BIM_PREFIX
+--sst_file=/home/nayeonkim1/PRScs/summary_statistics/PRScs_KBB_DB.txt #SUM_STATS_FILE 
+--n_gwas= 58622 # GWAS_SAMPLE_SIZE
+--out_dir=/home/nayeonkim1/PRScs/result/KBB_DB/PRScs_KBB_DB # OUTPUT_DIR
+  
