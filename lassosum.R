@@ -18,13 +18,13 @@ library(data.table)
 ss <- fread("/home/nayeonkim1/summary_statistics/UKBB_T2DB.txt")
 
 # Define reference panel, test sample, and LDblock
-ref.bfile <- "/home/lee7801/DATA/PRS/EURID_1000G_plink"
+ref.bfile <- "/home/lee7801/DATA/PRS/EURID_1000G_plink" #reference file, usually 1000 Genome
 test.bfile <- "" # test.bfile is the plink file you used for model training.
 LDblocks <- "EUR.hg19"  #LDblocks can be ASN, EUR, etc. Details can be found at https://github.com/tshmak/lassosum.
 
 # Phenotype and covariate
-pheno <- fread("/home/nayeonkim1/pheno/KBN_WHOLE_T2DB.txt")
-covar <- fread("/home/nayeonkim1/pheno/KBN_WHOLE_covar.txt")
+pheno <- fread("/home/nayeonkim1/pheno/KBN_WHOLE_T2DB.txt") #phenotype
+covar <- fread("/home/nayeonkim1/pheno/KBN_WHOLE_covar.txt") #covariate
 
 # Split into validation set and test set
 train_set <- fread("/home/nayeonkim1/pheno/train.txt")
