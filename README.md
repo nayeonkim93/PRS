@@ -1,4 +1,4 @@
 # PRS
 
-Lassosum : penalized regression //
-PRScs : baysian 
+Lassosum : penalized regression\
+PRScs : baysian regression
